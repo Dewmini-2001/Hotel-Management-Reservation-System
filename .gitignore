@@ -1,0 +1,16 @@
+# NetBeans
+nbproject/private/
+
+# Ant build output
+build/
+dist/
+
+# Java compiled files
+*.class
+
+# IDE/system files
+.DS_Store
+Thumbs.db
+
+# Local database files
+*.db
