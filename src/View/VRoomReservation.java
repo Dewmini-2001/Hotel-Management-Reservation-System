@@ -344,7 +344,7 @@ public class VRoomReservation extends javax.swing.JFrame {
 
         // Show success message
         JOptionPane.showMessageDialog(this, "Room reservation successful", "Success", JOptionPane.INFORMATION_MESSAGE);
-        
+        loadReservation();
        txt_reservation_no.setText("");
        txt_guest_id.setText("");
        txt_guest_name.setText("");

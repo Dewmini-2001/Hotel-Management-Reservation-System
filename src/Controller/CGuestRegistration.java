@@ -2,11 +2,17 @@ package Controller;
 
 import Model.*;
 import java.sql.*;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 public class CGuestRegistration {
     
-    public void registerGuest(String guest_id, String first_name, String last_name, String email, String phone, String id_type, String id_no) {
+    public void registerGuest(String guest_id, String first_name, String last_name, String email, String phone, String id_type, String id_no) 
+    {if (!email.contains("@")) {
+        JOptionPane.showMessageDialog(null, 
+                "Please enter a valid email address.");
+        return;
+    }
         MGuestRegistration MReg = new MGuestRegistration();
         MReg.registerGuest(guest_id, first_name, last_name, email, phone, id_type, id_no);
     } 

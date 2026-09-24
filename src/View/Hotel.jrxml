@@ -31,45 +31,61 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch"/>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="121" y="12" width="289" height="25" uuid="a456f437-e72e-41f7-b299-bc8f4424e115"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[HOTEL GUEST REPORT]]></text>
+			</staticText>
+		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch"/>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="156" y="0" width="220" height="20" uuid="3f8fbd51-8b2a-495d-be14-362b93057d00"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hotel Reservation System]]></text>
+			</staticText>
+		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="61" splitType="Stretch">
+		<band height="33" splitType="Stretch">
 			<staticText>
-				<reportElement x="19" y="2" width="70" height="20" uuid="d71707c6-0cf9-45c7-b9a5-741e40789e81"/>
+				<reportElement x="19" y="0" width="70" height="20" uuid="d71707c6-0cf9-45c7-b9a5-741e40789e81"/>
 				<text><![CDATA[guest_id]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="100" y="2" width="56" height="20" uuid="de89d3e3-df24-40b5-aba2-ef7815f98b0d"/>
+				<reportElement x="100" y="0" width="56" height="20" uuid="de89d3e3-df24-40b5-aba2-ef7815f98b0d"/>
 				<text><![CDATA[first_name]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="195" y="2" width="62" height="20" uuid="3dd2f985-68cf-46e7-8789-cb15960a76ce"/>
+				<reportElement x="195" y="0" width="62" height="20" uuid="3dd2f985-68cf-46e7-8789-cb15960a76ce"/>
 				<text><![CDATA[last_name]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="287" y="2" width="46" height="20" uuid="70da196f-e645-4172-bc85-875ef1b64f83"/>
+				<reportElement x="287" y="0" width="46" height="20" uuid="70da196f-e645-4172-bc85-875ef1b64f83"/>
 				<text><![CDATA[email]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="364" y="2" width="46" height="20" uuid="ce0e19ea-4271-4004-941f-349abb392f51"/>
+				<reportElement x="364" y="0" width="46" height="20" uuid="ce0e19ea-4271-4004-941f-349abb392f51"/>
 				<text><![CDATA[phone]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="427" y="2" width="60" height="20" uuid="f7c06df0-00bf-4029-a093-f74578e272f3"/>
+				<reportElement x="427" y="0" width="60" height="20" uuid="f7c06df0-00bf-4029-a093-f74578e272f3"/>
 				<text><![CDATA[id_type]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="499" y="2" width="56" height="20" uuid="93d7b8bc-603c-453b-a4b1-7640931606f5"/>
+				<reportElement x="499" y="0" width="56" height="20" uuid="93d7b8bc-603c-453b-a4b1-7640931606f5"/>
 				<text><![CDATA[id_no]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="125" splitType="Stretch">
+		<band height="56" splitType="Stretch">
 			<textField>
 				<reportElement x="19" y="10" width="70" height="20" uuid="e2b62317-9ccc-48b3-8d33-e2ae8ec9881a"/>
 				<textFieldExpression><![CDATA[$F{guest_id}]]></textFieldExpression>
@@ -101,7 +117,7 @@
 		</band>
 	</detail>
 	<columnFooter>
-		<band height="45" splitType="Stretch"/>
+		<band height="33" splitType="Stretch"/>
 	</columnFooter>
 	<pageFooter>
 		<band height="54" splitType="Stretch"/>

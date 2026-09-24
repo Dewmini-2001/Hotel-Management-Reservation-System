@@ -58,7 +58,7 @@ public class VReport extends javax.swing.JFrame {
 
     private void btn_generateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_generateActionPerformed
        try {
-            String reportPath = "C:\\Users\\LENOVO\\OneDrive\\Documents\\NetBeansProjects\\Hotel Reservation System\\src\\View\\Hotel.jrxml";
+            String reportPath = "C:\\Users\\dewmi\\Desktop\\Hotel Reservation System\\Hotel Reservation System\\src\\View\\Hotel.jrxml";
             JasperReport jr = JasperCompileManager.compileReport(reportPath);
             JasperPrint jp = JasperFillManager.fillReport(jr, null, DBConnection.createDBConnection());
             JasperViewer.viewReport(jp);

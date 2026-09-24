@@ -273,6 +273,11 @@ public class VGuestRegistration extends javax.swing.JFrame {
      String phone = txt_phone.getText(); 
      String id_type = cmb_id_type.getSelectedItem().toString();
      String id_no = txt_id_no.getText(); 
+     if (!email.contains("@")) {
+        JOptionPane.showMessageDialog(this, 
+                "Please enter a valid email address.");
+        return;
+    }
      
      MGuest.registerGuest(guest_id, first_name, last_name, email, phone, id_type, id_no); 
      
@@ -297,6 +302,11 @@ public class VGuestRegistration extends javax.swing.JFrame {
      String phone = txt_phone.getText(); 
      String id_type = cmb_id_type.getSelectedItem().toString();
      String id_no = txt_id_no.getText();
+     if (!email.contains("@")) {
+        JOptionPane.showMessageDialog(this, 
+                "Please enter a valid email address.");
+        return;
+    }
 
      MGuest.updateGuest(guest_id, first_name, last_name, email, phone, id_type, id_no);
      JOptionPane.showMessageDialog(this, "Guest Updated Successfully"); 
